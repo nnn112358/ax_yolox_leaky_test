@@ -1,7 +1,12 @@
 # ax_yolox_leaky_test
 
-## Result
+## Abst
 
+I am evaluating the performance of AI cast (vs Jetson Orin Nano)  
+I tried to compare it with AX630C.  
+https://note.com/idein/n/n63728d3c107e?sub_rt=share_h  
+
+## Result
 
 ```
 root@m5stack-LLM:/opt/usr/241218_Vit# ./ax_model_info -m yolox_s_leaky.axmodel
