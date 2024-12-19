@@ -1,5 +1,43 @@
 # ax_yolox_leaky_test
 
+## Result
+
+
+```
+root@m5stack-LLM:/opt/usr/241218_Vit# ./ax_model_info -m yolox_s_leaky.axmodel
+--------------------------------------
+model file : yolox_s_leaky.axmodel
+--------------------------------------
+Engine creating handle is done.
+Engine creating context is done.
+Engine get io info is done.
+
+input size: 1
+    name:   images [UINT8] [BGR]
+        1 x 640 x 640 x 3
+
+
+output size: 1
+    name:   output [FLOAT32]
+        1 x 8400 x 85
+
+root@m5stack-LLM:/opt/usr/241218_Vit# ax_run_model -m yolox_s_leaky.axmodel -r 10
+   Run AxModel:
+         model: yolox_s_leaky.axmodel
+          type: Half
+          vnpu: Disable
+      affinity: 0b01
+        warmup: 1
+        repeat: 10
+         batch: { auto: 0 }
+   pulsar2 ver: 3.3 3cdead5e
+    engine ver: 2.6.3sp
+      tool ver: 2.3.3sp
+      cmm size: 15394550 Bytes
+  ------------------------------------------------------
+  min =  20.121 ms   max =  20.237 ms   avg =  20.146 ms
+  ------------------------------------------------------
+```
 
 ## yolox_s_leaky download
 ````
