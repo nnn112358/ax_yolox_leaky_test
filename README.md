@@ -1,6 +1,12 @@
 # ax_yolox_leaky_test
 
 
+## yolox_s_leaky download
+````
+$ wget https://hailo-model-zoo.s3.eu-west-2.amazonaws.com/ObjectDetection/Detection-COCO/yolo/yolox_s_leaky/pretrained/2023-05-31/yolox_s_leaky.zip
+& unzip yolox_s_leaky.zip
+````
+## yolox_s pulsar2 convert
 
 ````
 root #  pulsar2 build --target_hardware AX620E --input model/yolox_s_leaky.onnx --output_dir output --config config/yolo11_config.json
